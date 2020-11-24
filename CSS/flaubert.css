@@ -1,0 +1,378 @@
+body{
+  font-family: 'Times New Roman', Georgia, serif;/*Attribution d'une police par défaut*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;/*unité en fonction de la hauteur*/
+}
+
+main{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  margin-left: 150px; /*  marges sur les côtés pour centrer les blocks  */
+  margin-right:150px;
+}
+
+header, footer{
+  text-align: center; /*  texte aligné au centre  */
+}
+
+header{
+  background-color: #26C4EC; /* Couleur de fond   */
+  margin-left: 150px; /*  Marge sur les côtés pour cadrer la couleur de fond  */
+  margin-right: 150px;
+  margin-bottom: 20px; /* Petite marge en dessous de l'en-tête  */
+}
+
+footer{
+  background-color: #1E7FCB; /* Couleur de fond   */
+  margin-top:10px; /* Petit marge au dessus du bas de page  */
+  margin-right:150px; /*  Marge sur les côtés pour cadrer la couleur de fond  */
+  margin-left:150px;
+}
+
+article{
+  font-size: 5vh;
+  margin-left:50px; /* Marge entre l'article et l'aside  */
+  padding:20px;
+  text-align: justify; /* Permet d'avoir un texte jusitifié   */
+  background-color:#BBDDEE; /* Couleur de fond   */
+}
+
+aside{
+  width: 50em;/*unité en fonction de la police*/
+  padding: 10px;
+}
+
+nav{
+  padding: 10px; /* Marge intérieur pour éviter que la couleur de fond soit un peu plus large   */
+  padding-top: 3px;
+  padding-bottom:3px;
+  order:-1; /* Permet de le placer en premier dans l'aside */
+  background-color: #FFB99D;
+  margin-bottom: 15px; /* Petite marge en dessous du nav  */
+}
+
+nav a{ /* cible les hyperliens dans le nav   */
+  text-decoration: none; /* pas de décoration (soulignement, gras,etc)  */
+  color: black; /* Couleur du texte  */
+}
+
+figure{
+  max-width: 500px; /* Taille maximale des images */
+  margin-top: 0; /* Pas de marge   */
+}
+
+img{
+  max-width: 100%;
+  height:auto; /* hauteur automatique en fonction de la taille   */
+}
+
+h1{
+  font-size: 40px; /* Taille de la police   */
+  font-weight: bold; /* Mise en gras   */
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom:5px;
+}
+
+h3{
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+p,li,ul{ /* concerne les paragraphes, éléments de liste et listes(nécessaire pour enlever la marge) */
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.reseaux_sociaux{ /* Classe réseaux_sociaux qui concerne les icônes de réseaux sociaux  */
+  max-width: 50px;
+  height:auto;
+  padding:5px;
+}
+
+.map-responsive { /* Classe du Google maps pour contrôler sa taille  */
+  width:400px;
+  height:300px;  
+}
+
+#informations{ /* ID de la section informations   */
+  background-color:#80D0D0;
+  padding:15px;
+  padding-top: 3px;
+  padding-bottom:3px;
+}
+
+#footer{ /* ID du paragraphe dans le footer  */
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+#galerie{ /* ID de la section qui comprends les images  */
+  margin-top:50px;
+}
+
+#jean_civiale,#Pierre-françois-percy,#jean-baptiste-laumonier,#inconnu,#developpeur{/* On indique une taille suffisante */
+  width:400px;
+}
+
+#civiale{ /* On indique une taille suffisante */
+  width:400px;
+  height:300px;
+}
+
+#texte_civiale,#texte_percy,#texte_laumonier,#texte_interrogation,#texte_dev{/* On indique une taille de police idéale et on justifie */
+  font-size:20px;
+  text-align: justify;
+}
+
+#trousse,#malette{ /* On indique une taille suffisante */
+  height:300px;
+  width:auto;
+}
+
+#microscope{ /* On indique une taille suffisante */
+  height:500px;
+  width:auto;
+}
+
+#goku{ /* On indique une position flottante */
+  display: flex;
+  float:right;
+}
+
+
+/* animation sur la page presentation. Je sais que c'est hors sujet mais c'était très amusant à faire.*/
+#boule1 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+    }
+
+#boule2 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+      animation-delay: 0.1s;
+    }
+
+#boule3 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+      animation-delay: 0.2s;
+    }
+
+#boule4 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+      animation-delay: 0.3s;
+    }
+
+#boule5 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+      animation-delay: 0.4s;
+    }
+
+#boule6 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+      animation-delay: 0.5s;
+    }
+
+#boule7 {
+      width:200px;
+      height:auto;
+      position : absolute;
+      top :25em;
+      left : -30em;
+      animation : envol 3s linear;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes envol { /*L'image pars d'une position vers une autre*/
+      from {transform : translate(0px,0px);}
+      to {transform : translate(4000px,-1000px);}
+    }
+/*fin de l'animation*/
+
+@media screen and (max-width: 640px){ /* Design responsive pour smartphone   */
+  main {
+    flex-direction: column; 
+    margin:0; /* On enleve les marges pour voir le text entièrement   */
+  }
+
+  header{
+    margin:0;
+    margin-right:5px;
+    width:auto; /* On laisse la taille se faire automatiquement en fonction de l'écran   */
+  }
+
+  footer{
+    margin:0;
+    margin-top:2px; /* On place de nouvelles marges pour contrôler le design  */
+  }
+
+  article{
+    margin:0;
+    margin-top:2px;
+    width:auto;
+    order:-2;
+  }
+  
+  aside{
+    width:auto;
+  }
+
+  nav {
+    order : -1;
+  }
+
+  img,#civiale,#trousse,#malette,#microscope{
+    height:200px; /* Contrôle de la taille des images   */
+    width:auto;
+  }
+
+  h1{
+    font-size: 20px; /* Changement de la taille des polices pour rendre le texte lisible  */
+  }
+
+  h2{
+    font-size:24px;
+  }
+
+  p,li,ul,#texte_civiale,#texte_percy,#texte_laumonier,#texte_interrogation,#texte_dev{
+    font-size:15px;
+  }
+
+  .map-responsive{
+    height:200px;
+    width:auto;
+  }
+
+  .reseaux_sociaux{
+    height:25px;
+    width:auto;
+  }
+
+  #informations,nav{
+    text-align: center; /* Alignement centré pour rester cohérent avec le design verticale  */
+  }
+
+  #galerie{
+    margin:10px;
+  }
+
+  #footer{
+    font-size: 10px;
+  } 
+
+  #jean_civiale,#Pierre-françois-percy,#jean-baptiste-laumonier,#inconnu,#developpeur{
+    width:auto;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 640px){ /* Design responsive tablette, Ipad, moyen écran   */
+  main{
+    flex-direction: column;
+    margin-right: 80px; /* Nouvelles marges pour contrôler le design  */
+    margin-left: 80px; /* La suite reste très proche de reponsive smartphone  */
+  }
+
+  header{
+    margin-right: 80px;
+    margin-left: 80px;
+    width:auto;
+  }
+
+  footer{
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top:2px;
+  }
+
+  article{
+    margin:0;
+    margin-top:2px;
+    width:auto;
+    order:-2;
+  }
+
+  aside{
+    width:auto;
+  }
+
+  nav {
+    order : -1;
+  }
+
+  img,#civiale,#trousse,#malette,#microscope{
+    height:200px; 
+    width:auto;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size:24px;
+  }
+
+  p,li,ul,#texte_civiale,#texte_percy,#texte_laumonier,#texte_interrogation,#texte_dev{
+    font-size:15px;
+  }
+
+  .map-responsive{
+    height:200px;
+    width:auto;
+  }
+
+  .reseaux_sociaux{
+    height:25px;
+    width:auto;
+  }
+
+  #footer{
+    font-size: 10px;
+  }
+
+  #galerie{
+    margin:10px;
+  }
+
+  #informations,nav{
+    text-align: center;
+  }
+
+  #jean_civiale,#Pierre-françois-percy,#jean-baptiste-laumonier,#inconnu,#developpeur{
+    width:auto;
+  }
+}
